@@ -19,10 +19,9 @@ The USGS is interested in building a new set of tools that will allow them visua
 
 
 <li>This project utilizes both html and Javascript so be sure to add all the necessary files. These will be the main files to run for analysis.</li>
+  <li>use your api key to run this project</li>
 
 
 
 
-  <h1>Task</h1>
-  <a class="no-attachment-icon" href="/University-of-Minnesota-Boot-Camp/uofm-stp-data-pt-12-2020-u-c/raw/master/02-Homework/17-Mapping-Web/Instructions/Images/2-BasicMap.png" target="_blank" rel="noopener noreferrer"><img src="/University-of-Minnesota-Boot-Camp/uofm-stp-data-pt-12-2020-u-c/raw/master/02-Homework/17-Mapping-Web/Instructions/Images/2-BasicMap.png" alt="2-BasicMap" class="js-lazy-loaded qa-js-lazy-loaded"></a>
-<img src="/University-of-Minnesota-Boot-Camp/uofm-stp-data-pt-12-2020-u-c/raw/master/02-Homework/17-Mapping-Web/Instructions/Images/2-BasicMap.png" alt="2-BasicMap" class="js-lazy-loaded qa-js-lazy-loaded"></a>
+  
