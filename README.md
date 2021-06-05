@@ -24,4 +24,5 @@ The USGS is interested in building a new set of tools that will allow them visua
 
 
   <h1>Task</h1>
-<img src="/University-of-Minnesota-Boot-Camp/uofm-stp-data-pt-12-2020-u-c/raw/master/02-Homework/17-Mapping-Web/Instructions/Images/2-BasicMap.png" alt="2-BasicMap" class="js-lazy-loaded qa-js-lazy-loaded">
+  <a class="no-attachment-icon" href="/University-of-Minnesota-Boot-Camp/uofm-stp-data-pt-12-2020-u-c/raw/master/02-Homework/17-Mapping-Web/Instructions/Images/2-BasicMap.png" target="_blank" rel="noopener noreferrer"><img src="/University-of-Minnesota-Boot-Camp/uofm-stp-data-pt-12-2020-u-c/raw/master/02-Homework/17-Mapping-Web/Instructions/Images/2-BasicMap.png" alt="2-BasicMap" class="js-lazy-loaded qa-js-lazy-loaded"></a>
+<img src="/University-of-Minnesota-Boot-Camp/uofm-stp-data-pt-12-2020-u-c/raw/master/02-Homework/17-Mapping-Web/Instructions/Images/2-BasicMap.png" alt="2-BasicMap" class="js-lazy-loaded qa-js-lazy-loaded"></a>
