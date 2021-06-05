@@ -81,3 +81,50 @@ function drawMap(earthquakes) {
 
     // Add the legend to the map
     legend.addTo(earthquakeMap);
+
+}
+
+// --------------------------
+
+// Perform API Call to get earthquake data
+d3.json(geojsonURL).then(function (data) {
+    magnitudeMarkers(data.features)
+});
+
+
+// Add Magnitude Markers to the map
+function magnitudeMarkers(quakeData) {
+    
+    function onEachFeature(feature, layer) {
+        layer.bindPopup("<h3>" + feature.properties.place + "</h3><p>" + feature.properties.mag + " Magnitude</p><p>" + "</h3><p>" + feature.geometry.coordinates[2] + " Depth</p><p>" + new Date(feature.properties.time) + "</p>");
+    }
+
+    // Function to update the marker size for map readability
+    function markerSize(magnitude) {
+        if (magnitude === 0) {
+          return 1;
+        }
+        return magnitude * 3;
+    }
+
+    // Create geojson layer
+    var earthquakes = L.geoJSON(quakeData, {
+        pointToLayer: function (feature, latlng) {
+            return new L.circleMarker(latlng, {
+                radius: markerSize(feature.properties.mag),
+                color: "black",
+                weight: 1,
+                fill: true,
+                fillColor: (getColor(feature.geometry.coordinates[2])),
+                fillOpacity: 1
+            })
+        },
+
+        // Call onEachFeature function
+        onEachFeature: onEachFeature
+    
+    });
+
+    drawMap(earthquakes);
+
+}
