@@ -51,3 +51,33 @@ function drawMap(earthquakes) {
         "Earthquakes": earthquakes
     };
   
+    // Set up initial Map
+    // Add base and overlay layers to map
+    var earthquakeMap = L.map("mapid", {
+        center: [40.7, -97],
+        zoom: 5,
+        layers: [outdoorsMap, earthquakes]
+    });
+
+    // Pass map layers into our layer control
+    L.control.layers(baseMaps, overlayMaps, {
+        collapsed: false
+    }).addTo(earthquakeMap);
+
+    var legend = L.control({ position: "bottomright" });
+    legend.onAdd = function() {
+        var div = L.DomUtil.create("div", "info legend"), 
+        magnitudeLevels = [0, 10, 30, 50, 70, 90];
+
+        div.innerHTML += "<h3>Depth Recorded</h3>"
+
+        for (var i = 0; i < magnitudeLevels.length; i++) {
+            div.innerHTML +=
+                '<i style="background: ' + getColor(magnitudeLevels[i] + 1) + '"></i> ' +
+                magnitudeLevels[i] + (magnitudeLevels[i + 1] ? '&ndash;' + magnitudeLevels[i + 1] + '<br>' : '+');
+        }
+        return div;
+    };
+
+    // Add the legend to the map
+    legend.addTo(earthquakeMap);
