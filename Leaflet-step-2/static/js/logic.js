@@ -1,6 +1,3 @@
-// console.log("logic.js is connected to the index.html");
-
-
 var geojsonURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
 // console.log("Geo JSON data loaded");
 
